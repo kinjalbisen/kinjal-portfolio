@@ -1,0 +1,28 @@
+/* styles.css */
+
+/* Custom Scrollbar (for webkit browsers) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e11d48;
+  border-radius: 8px;
+}
+
+/* Optional custom cursor */
+/* body {
+  cursor: url('/assets/icons/custom-cursor.png'), auto;
+} */
+
+/* Optional section padding helper (in case of overlap with navbar) */
+.section-padding {
+  padding-top: 5rem;
+}
+
+/* Add more custom styles here */
+/* Optional, for smoother hover */
+.group:hover video {
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+}

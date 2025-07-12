@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kinjal Bisen | Portfolio</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- GSAP + ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* Optional: hide scrollbars (Chrome) */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #e11d48;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-900 text-white">
+
+    <!-- Navbar -->
+    <header class="fixed w-full z-50 bg-gray-900 bg-opacity-80 backdrop-blur-md shadow-md">
+      <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+        <h1 class="text-xl font-bold text-pink-500">Kinjal</h1>
+        <nav class="hidden md:flex space-x-6">
+          <a href="#home" class="hover:text-pink-400 transition">Home</a>
+          <a href="#projects" class="hover:text-pink-400 transition">Projects</a>
+          <a href="#about" class="hover:text-pink-400 transition">About</a>
+          <a href="#skills" class="hover:text-pink-400 transition">Skills</a>
+          <a href="#contact" class="hover:text-pink-400 transition">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="h-screen flex items-center justify-center text-center px-6 pt-20">
+      <div>
+        <h2 class="text-3xl md:text-5xl font-bold mb-4">
+          Hi, I'm <span class="text-pink-500">Kinjal Bisen</span>
+        </h2>
+        <p class="text-lg md:text-xl text-gray-300 mb-6 max-w-xl mx-auto">
+          I design and build beautiful, fast, and responsive web experiences using HTML, TailwindCSS, and JavaScript.
+        </p>
+        <a href="#projects" class="inline-block bg-pink-600 hover:bg-pink-700 text-white px-6 py-3 rounded-full font-medium transition duration-300">
+          View My Work
+        </a>
+      </div>
+    </section>
+
+    <!-- Scroll Down Indicator -->
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce text-sm text-gray-400">
+      Scroll ↓
+    </div>
+
+    <!-- Projects Section -->
+<!-- Projects Section -->
+<section id="projects" class="min-h-screen px-6 py-20 bg-gray-950">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-4xl font-bold text-center text-pink-500 mb-12">My Projects</h2>
+
+    <!-- Live Projects Grid -->
+    <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+      
+      <!-- Project 1: Annatikana Clone -->
+      <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg group hover:scale-105 transition transform duration-300">
+        <video class="w-full h-48 object-cover" autoplay muted loop playsinline>
+          <source src="assets/videos/annatikana.mp4" type="video/mp4" />
+        </video>
+        <div class="p-5 text-left">
+          <h3 class="text-xl font-semibold text-white mb-2 group-hover:text-pink-500 transition">Annatikana Clone</h3>
+          <p class="text-gray-300 text-sm mb-2">Frontend website clone using GSAP animations and ScrollTrigger.</p>
+          <div class="text-xs flex gap-2 flex-wrap">
+            <span class="bg-pink-600 px-2 py-1 rounded">HTML</span>
+            <span class="bg-pink-600 px-2 py-1 rounded">CSS</span>
+            <span class="bg-pink-600 px-2 py-1 rounded">JavaScript</span>
+            <span class="bg-pink-600 px-2 py-1 rounded">GSAP</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2: Moonli Clone -->
+      <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg group hover:scale-105 transition transform duration-300">
+        <video class="w-full h-48 object-cover" autoplay muted loop playsinline>
+          <source src="assets/videos/moonli.mp4" type="video/mp4" />
+        </video>
+        <div class="p-5 text-left">
+          <h3 class="text-xl font-semibold text-white mb-2 group-hover:text-pink-500 transition">Moonli Clone</h3>
+          <p class="text-gray-300 text-sm mb-2">Frontend GSAP project showcasing elegant animations and interactivity.</p>
+          <div class="text-xs flex gap-2 flex-wrap">
+            <span class="bg-pink-600 px-2 py-1 rounded">HTML</span>
+            <span class="bg-pink-600 px-2 py-1 rounded">CSS</span>
+            <span class="bg-pink-600 px-2 py-1 rounded">JavaScript</span>
+            <span class="bg-pink-600 px-2 py-1 rounded">GSAP</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3: Zelt Clone -->
+      <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg group hover:scale-105 transition transform duration-300">
+        <video class="w-full h-48 object-cover" autoplay muted loop playsinline>
+          <source src="assets/videos/zelt.mp4" type="video/mp4" />
+        </video>
+        <div class="p-5 text-left">
+          <h3 class="text-xl font-semibold text-white mb-2 group-hover:text-pink-500 transition">Zelt Homepage Clone</h3>
+          <p class="text-gray-300 text-sm mb-2">Interactive clone with locomotiveJS, GSAP, canvas animations, and smooth scrolling.</p>
+          <div class="text-xs flex gap-2 flex-wrap">
+            <span class="bg-pink-600 px-2 py-1 rounded">HTML</span>
+            <span class="bg-pink-600 px-2 py-1 rounded">CSS</span>
+            <span class="bg-pink-600 px-2 py-1 rounded">JavaScript</span>
+            <span class="bg-pink-600 px-2 py-1 rounded">GSAP</span>
+            <span class="bg-pink-600 px-2 py-1 rounded">LocomotiveJS</span>
+            <span class="bg-pink-600 px-2 py-1 rounded">Canvas</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4: Instagram Clone -->
+      <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg group hover:scale-105 transition transform duration-300">
+        <video class="w-full h-48 object-cover" autoplay muted loop playsinline>
+          <source src="assets/videos/instagram.mp4" type="video/mp4" />
+        </video>
+        <div class="p-5 text-left">
+          <h3 class="text-xl font-semibold text-white mb-2 group-hover:text-pink-500 transition">Instagram Clone</h3>
+          <p class="text-gray-300 text-sm mb-2">A Node.js social app using MongoDB, Express, PassportJS and MulterJS.</p>
+          <div class="text-xs flex gap-2 flex-wrap">
+            <span class="bg-pink-600 px-2 py-1 rounded">Node.js</span>
+            <span class="bg-pink-600 px-2 py-1 rounded">MongoDB</span>
+            <span class="bg-pink-600 px-2 py-1 rounded">Express</span>
+            <span class="bg-pink-600 px-2 py-1 rounded">PassportJS</span>
+            <span class="bg-pink-600 px-2 py-1 rounded">MulterJS</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 5: IDE Box -->
+      <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg group hover:scale-105 transition transform duration-300">
+        <video class="w-full h-48 object-cover" autoplay muted loop playsinline>
+          <source src="assets/videos/idebox.mp4" type="video/mp4" />
+        </video>
+        <div class="p-5 text-left">
+          <h3 class="text-xl font-semibold text-white mb-2 group-hover:text-pink-500 transition">IDE Box</h3>
+          <p class="text-gray-300 text-sm mb-2">A web-based VS Code clone with file upload, archiving, and live editing.</p>
+          <div class="text-xs flex gap-2 flex-wrap">
+            <span class="bg-pink-600 px-2 py-1 rounded">Node.js</span>
+            <span class="bg-pink-600 px-2 py-1 rounded">Express</span>
+            <span class="bg-pink-600 px-2 py-1 rounded">MongoDB</span>
+            <span class="bg-pink-600 px-2 py-1 rounded">MulterJS</span>
+            <span class="bg-pink-600 px-2 py-1 rounded">Archiver</span>
+            <span class="bg-pink-600 px-2 py-1 rounded">Monaco Editor</span>
+          </div>
+        </div>
+      </div>
+   
+
+    <!-- Upcoming Projects -->
+    <!-- Project 6: MoodTracker (Upcoming Project) -->
+<div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg group hover:scale-105 transition transform duration-300">
+  <img src="assets/images/moodtracker.jpeg" alt="Mood Tracker" class="w-full h-48 object-cover" />
+  <div class="p-5 text-left">
+    <h3 class="text-xl font-semibold text-white mb-2 group-hover:text-pink-500 transition">MoodTracker</h3>
+    <p class="text-gray-300 text-sm mb-2">A MERN stack journaling app integrated with Gemini AI for emotional tracking and insights.</p>
+    <div class="flex flex-wrap gap-2 mt-2 text-xs">
+      <span class="bg-pink-600 px-2 py-1 rounded">React</span>
+      <span class="bg-pink-600 px-2 py-1 rounded">Node.js</span>
+      <span class="bg-pink-600 px-2 py-1 rounded">MongoDB</span>
+      <span class="bg-pink-600 px-2 py-1 rounded">Gemini AI</span>
+      <span class="bg-yellow-500 text-black px-2 py-1 rounded font-semibold">🚧 Upcoming</span>
+    </div>
+  </div>
+</div>
+
+
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="min-h-screen px-6 py-20 bg-gray-900">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+    
+    <!-- Left: Image or Animation -->
+    <div class="flex justify-center">
+  <img src="assets/images/profile.jpg" alt="Kinjal Profile" 
+       class="w-72 h-72 rounded-full object-cover shadow-lg border-4 border-pink-500" />
+</div>
+
+
+    <!-- Right: About Content -->
+    <div>
+      <h2 class="text-4xl font-bold text-pink-500 mb-4">About Me</h2>
+      
+      <p class="text-gray-300 mb-4">
+        I'm Kinjal Bisen, a passionate technical student believes in crafting clean, interactive user experiences using modern technologies.
+      </p>
+
+      <h3 class="text-xl font-semibold text-white mb-2">🎓 Background</h3>
+      <p class="text-gray-400 mb-4">
+        Pursuing Bachelor of Technology in AI & Data Science. Experienced with web development, Java, DSA, and DBMS.
+      </p>
+
+      <h3 class="text-xl font-semibold text-white mb-2">✨ Personality</h3>
+      <p class="text-gray-400 mb-4">
+        I’m a versatile, vibrant, and determined individual. I value collaboration and bring a positive attitude to team environments. My adaptability and open-mindedness make me thrive in dynamic and challenging situations.
+      </p>
+
+      <h3 class="text-xl font-semibold text-white mb-2">🚀 Goals</h3>
+      <p class="text-gray-400">
+        To bring peoples emotion to the forefront of technology through empathetic design and innovative solutions.
+      </p>
+    </div>
+  </div>
+</section>
+<!-- Skills Section -->
+<section id="skills" class="min-h-screen px-6 py-20 bg-gray-950">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-4xl font-bold text-center text-pink-500 mb-12">Skills & Expertise</h2>
+
+    <!-- LANGUAGES -->
+    <h3 class="text-2xl font-semibold text-white mb-4">Languages</h3>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+      <div class="flex items-start space-x-4 p-4 bg-gray-800 rounded-lg">
+        <i class="devicon-java-plain colored text-3xl"></i>
+        <div>
+          <h4 class="font-semibold text-white">Java (Core)</h4>
+          <p class="text-gray-300 text-sm">Strong foundation in OOPs, DSA, and building logic-based applications.</p>
+        </div>
+      </div>
+      <div class="flex items-start space-x-4 p-4 bg-gray-800 rounded-lg">
+        <i class="devicon-mysql-plain colored text-3xl"></i>
+        <div>
+          <h4 class="font-semibold text-white">SQL / MySQL</h4>
+          <p class="text-gray-300 text-sm">Comfortable writing queries, designing schemas, and managing relational databases.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- WEB DEVELOPMENT -->
+    <h3 class="text-2xl font-semibold text-white mb-4">Web Development</h3>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+      <div class="flex items-start space-x-4 p-4 bg-gray-800 rounded-lg">
+        <i class="devicon-html5-plain colored text-3xl"></i>
+        <div>
+          <h4 class="font-semibold text-white">HTML5</h4>
+          <p class="text-gray-300 text-sm">Semantically structured content and accessible markup.</p>
+        </div>
+      </div>
+      <div class="flex items-start space-x-4 p-4 bg-gray-800 rounded-lg">
+        <i class="devicon-css3-plain colored text-3xl"></i>
+        <div>
+          <h4 class="font-semibold text-white">CSS3</h4>
+          <p class="text-gray-300 text-sm">Responsive design, layouts, and visual aesthetics.</p>
+        </div>
+      </div>
+      <div class="flex items-start space-x-4 p-4 bg-gray-800 rounded-lg">
+        <i class="devicon-javascript-plain colored text-3xl"></i>
+        <div>
+          <h4 class="font-semibold text-white">JavaScript</h4>
+          <p class="text-gray-300 text-sm">Interactive, dynamic user experiences using vanilla JS and libraries.</p>
+        </div>
+      </div>
+      <div class="flex items-start space-x-4 p-4 bg-gray-800 rounded-lg">
+        <img src="https://raw.githubusercontent.com/jesusantguerrero/tailwindcss-icon/master/src/tailwind-css-icon.png" class="w-7 h-7 mt-1" />
+        <div>
+          <h4 class="font-semibold text-white">TailwindCSS</h4>
+          <p class="text-gray-300 text-sm">Utility-first CSS for fast, clean, and responsive UI development.</p>
+        </div>
+      </div>
+      <div class="flex items-start space-x-4 p-4 bg-gray-800 rounded-lg">
+        <img src="https://raw.githubusercontent.com/jonataswalker/map-utils/master/images/gsap-logo.png" class="w-7 h-7 mt-1" />
+        <div>
+          <h4 class="font-semibold text-white">GSAP</h4>
+          <p class="text-gray-300 text-sm">Smooth, scroll-based animations using ScrollTrigger and timelines.</p>
+        </div>
+      </div>
+      <div class="flex items-start space-x-4 p-4 bg-gray-800 rounded-lg">
+        <i class="devicon-nodejs-plain colored text-3xl"></i>
+        <div>
+          <h4 class="font-semibold text-white">Node.js</h4>
+          <p class="text-gray-300 text-sm">Backend logic and REST API development using JavaScript.</p>
+        </div>
+      </div>
+      <div class="flex items-start space-x-4 p-4 bg-gray-800 rounded-lg">
+        <i class="devicon-express-original colored text-3xl"></i>
+        <div>
+          <h4 class="font-semibold text-white">Express.js</h4>
+          <p class="text-gray-300 text-sm">Routing, middleware, and backend API structure in Node apps.</p>
+        </div>
+      </div>
+      <div class="flex items-start space-x-4 p-4 bg-gray-800 rounded-lg">
+        <i class="devicon-mongodb-plain colored text-3xl"></i>
+        <div>
+          <h4 class="font-semibold text-white">MongoDB</h4>
+          <p class="text-gray-300 text-sm">Document-based NoSQL database for flexible backend storage.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- TOOLS -->
+    <h3 class="text-2xl font-semibold text-white mb-4">Tools & IDEs</h3>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="flex items-start space-x-4 p-4 bg-gray-800 rounded-lg">
+        <i class="devicon-git-plain colored text-3xl"></i>
+        <div>
+          <h4 class="font-semibold text-white">Git</h4>
+          <p class="text-gray-300 text-sm">Version control for tracking and managing code changes.</p>
+        </div>
+      </div>
+      <div class="flex items-start space-x-4 p-4 bg-gray-800 rounded-lg">
+        <i class="devicon-github-original colored text-3xl"></i>
+        <div>
+          <h4 class="font-semibold text-white">GitHub</h4>
+          <p class="text-gray-300 text-sm">Remote repositories for collaboration and portfolio hosting.</p>
+        </div>
+      </div>
+      <div class="flex items-start space-x-4 p-4 bg-gray-800 rounded-lg">
+        <i class="devicon-vscode-plain colored text-3xl"></i>
+        <div>
+          <h4 class="font-semibold text-white">VS Code</h4>
+          <p class="text-gray-300 text-sm">Primary code editor with extensions for web development.</p>
+        </div>
+      </div>
+      <div class="flex items-start space-x-4 p-4 bg-gray-800 rounded-lg">
+        <i class="devicon-intellij-plain colored text-3xl"></i>
+        <div>
+          <h4 class="font-semibold text-white">IntelliJ IDEA</h4>
+          <p class="text-gray-300 text-sm">Robust IDE used for Java-based application development.</p>
+        </div>
+      </div>
+      <div class="flex items-start space-x-4 p-4 bg-gray-800 rounded-lg">
+        <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" class="w-7 h-7 mt-1" />
+        <div>
+          <h4 class="font-semibold text-white">Postman</h4>
+          <p class="text-gray-300 text-sm">Testing and documenting REST APIs with real-time results.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Contact Section -->
+<section id="contact" class="px-6 py-20 bg-gray-900">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-4xl font-bold text-pink-500 mb-12">Get in Touch</h2>
+
+    <!-- Contact Info -->
+    <div class="grid md:grid-cols-2 gap-8 text-left text-white justify-items-center">
+      <div class="space-y-6">
+        <div class="flex items-center space-x-4">
+          <i class="fas fa-envelope text-pink-500 text-xl"></i>
+          <a href="mailto:kinjalbisen25@gmail.com" class="hover:underline text-gray-300">kinjalbisen25@gmail.com</a>
+        </div>
+        <div class="flex items-center space-x-4">
+          <i class="fas fa-phone text-pink-500 text-xl"></i>
+          <a href="tel:+919131922397" class="hover:underline text-gray-300">+91-91319-22397</a>
+        </div>
+      </div>
+
+      <div class="space-y-6">
+        <div class="flex items-center space-x-4">
+          <i class="fab fa-github text-pink-500 text-xl"></i>
+          <a href="https://github.com/kinjalbisen" target="_blank" class="hover:underline text-gray-300">github.com/kinjalbisen</a>
+        </div>
+        <div class="flex items-center space-x-4">
+          <i class="fab fa-linkedin text-pink-500 text-xl"></i>
+          <a href="https://www.linkedin.com/in/kinjal-bisen-2a216a257/" target="_blank" class="hover:underline text-gray-300">linkedin.com/in/kinjal-bisen</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Resume Section -->
+<!-- Resume Section -->
+<section id="resume" class="px-6 py-20 bg-gray-950 text-center">
+  <div class="max-w-3xl mx-auto">
+    <div class="resume-content">
+      <h2 class="text-4xl font-bold text-pink-500 mb-6">Resume</h2>
+      <p class="text-gray-300 text-lg mb-8">
+        Here's a quick overview of my education, experience, and technical background.
+        Download the resume for a complete picture.
+      </p>
+      <a href="assets/Kinjal_Bisen_Resume.pdf" download target="_blank"
+         class="inline-block px-6 py-3 bg-pink-600 hover:bg-pink-700 text-white font-semibold rounded-full transition duration-300">
+        <i class="fas fa-download mr-2"></i>Download Resume
+      </a>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Script for Animations -->
+    <script src="main.js"></script>
+  </body>
+</html>
